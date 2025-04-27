@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KironWatch</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="img/logo.png" alt="KironWatch Logo" class="logo">
+      <h1>Kironwatch</h1>
+    </header>
+
+    <div class="alerta">⚠️ ALERTA</div>
+
+    <section class="status">
+      <div class="bpm">
+        <span id="bpmValue">233</span>
+        <small>Por minuto</small>
+      </div>
+      <div class="hora">
+        <span id="horaValue">23:39</span>
+      </div>
+    </section>
+
+    <section class="botoes">
+      <img src="img/heart1.png" class="heart" alt="Coração Branco">
+      <img src="img/heart2.png" class="heart" alt="Coração Preto">
+    </section>
+
+    <section class="graficos">
+      <select>
+        <option>Historic</option>
+      </select>
+      <canvas id="graficoBatimentos"></canvas>
+    </section>
+
+    <footer>
+      <div class="icones">
+        <img src="img/icon1.png" alt="Ícone 1">
+        <img src="img/icon2.png" alt="Ícone 2">
+        <img src="img/icon3.png" alt="Ícone 3">
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
